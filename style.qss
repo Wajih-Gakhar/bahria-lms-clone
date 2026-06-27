@@ -1,0 +1,342 @@
+/* Main Window Styling */
+QMainWindow {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1e3c72,
+        stop:1 #2a5298
+    );
+}
+
+/* All Widgets Background */
+QWidget {
+    background-color: #f5f5f5;
+    color: #333333;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+}
+
+/* Labels */
+QLabel {
+    color: #333333;
+    font-size: 11pt;
+    background: transparent;
+}
+
+/* Group Boxes */
+QGroupBox {
+    font-weight: bold;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 15px;
+    background-color: white;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 5px 10px;
+    color: #2a5298;
+    background-color: white;
+}
+
+/* Line Edits */
+QLineEdit {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11pt;
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2a5298;
+}
+
+QLineEdit:disabled {
+    background-color: #e0e0e0;
+    color: #999999;
+}
+
+/* Combo Boxes */
+QComboBox {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11pt;
+    min-height: 25px;
+}
+
+QComboBox:focus {
+    border: 2px solid #2a5298;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #2a5298;
+    margin-right: 10px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    border: 2px solid #2a5298;
+    selection-background-color: #2a5298;
+    selection-color: white;
+}
+
+/* Push Buttons */
+QPushButton {
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 11pt;
+    min-height: 35px;
+}
+
+QPushButton:hover {
+    background-color: #3d6bb3;
+}
+
+QPushButton:pressed {
+    background-color: #1e3c72;
+}
+
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: white;
+    alternate-background-color: #f9f9f9;
+    gridline-color: #e0e0e0;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    selection-background-color: #2a5298;
+    selection-color: white;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QTableWidget::item:selected {
+    background-color: #2a5298;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #2a5298;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+QHeaderView::section:horizontal {
+    border-right: 1px solid #1e3c72;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    background-color: white;
+    top: -2px;
+}
+
+QTabBar::tab {
+    background-color: #e0e0e0;
+    border: 2px solid #cccccc;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 10px 20px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    border-color: #2a5298;
+    border-bottom: 2px solid white;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #f0f0f0;
+}
+
+/* Spin Boxes */
+QSpinBox {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11pt;
+}
+
+QSpinBox:focus {
+    border: 2px solid #2a5298;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #2a5298;
+    border: none;
+    width: 20px;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #3d6bb3;
+}
+
+QSpinBox::up-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid white;
+}
+
+QSpinBox::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid white;
+}
+
+/* Date Edit */
+QDateEdit {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11pt;
+}
+
+QDateEdit:focus {
+    border: 2px solid #2a5298;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #2a5298;
+}
+
+/* Text Edit */
+QTextEdit {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 11pt;
+}
+
+QTextEdit:focus {
+    border: 2px solid #2a5298;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical {
+    background-color: #f0f0f0;
+    width: 14px;
+    border-radius: 7px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2a5298;
+    border-radius: 7px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #3d6bb3;
+}
+
+QScrollBar:horizontal {
+    background-color: #f0f0f0;
+    height: 14px;
+    border-radius: 7px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #2a5298;
+    border-radius: 7px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #3d6bb3;
+}
+
+/* Login Window Specific */
+#MainWindow {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1e3c72,
+        stop:1 #2a5298
+    );
+}
+
+#MainWindow QLabel {
+    color: white;
+}
+
+#MainWindow #titleLabel {
+    color: white;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#MainWindow #subtitleLabel {
+    color: #e0e0e0;
+    font-size: 12pt;
+}
+
+#MainWindow #credentialsLabel {
+    color: #b0b0b0;
+    font-size: 8pt;
+}
+
+#MainWindow QGroupBox QLabel {
+    color: #333333;
+    font-weight: bold; /* Optional: makes headers pop */
+}
+/* --- FIX: Main Window Title Visibility --- */
+
+/* Change the title to a dark color for better contrast on a light background */
+#MainWindow #titleLabel {
+    color: #1e3c72; /* Dark blue/navy from your gradient start */
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+/* Change the subtitle to a dark color as well */
+#MainWindow #subtitleLabel {
+    color: #2a5298; /* Darker blue/navy from your QGroupBox border */
+    font-size: 12pt;
+}
+
+/* Ensure any other general labels on the main window are also dark if they aren't in the login box */
+#MainWindow QLabel:!hover {
+    color: #333333;
+}
