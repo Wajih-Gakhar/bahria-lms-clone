@@ -6,7 +6,7 @@ A complete Learning Management System clone of Bahria University's LMS, built in
 
 ## 🎥 Video
 
-> https://github.com/user-attachments/assets/f9c81c69-b1c5-413b-8ccc-a85b16bf453e
+> https://github.com/user-attachments/assets/a47340b9-baae-47b6-98ec-342506cc69a2
 
 ---
 
